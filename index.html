@@ -3,54 +3,350 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>E Luna Enterprises, LLC</title>
-<meta name="description" content="E Luna Enterprises, LLC is a California company that builds and operates consumer brands and digital platforms, including Tijuas.com.">
+<title>E Luna B Group — E Luna Enterprises, LLC</title>
+<meta name="description" content="E Luna B Group, a brand of E Luna Enterprises, LLC, is a selected portfolio of businesses and ventures. Founding member: Tijuas.com, the bilingual guide to Tijuana.">
 <link rel="canonical" href="https://elunaenterprisesllc.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0b0c'/%3E%3Cpath fill='%23f3eee4' d='M5 5h9v3H8v5h5v3H8v5h6v3H5zM17 5h3v13h6v3h-9z'/%3E%3Cpath fill='%23e63b2e' d='M20 20h7v3h-7z'/%3E%3C/svg%3E">
 <style>
-  :root { --red: #e10600; --ink: #0b0b0c; --soft: #a9abb2; }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; background: var(--ink); color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  body { min-height: 100vh; display: flex; flex-direction: column; }
-  .wrap { width: 100%; max-width: 880px; margin: 0 auto; padding: 0 24px; }
-  header { padding: 28px 0; border-bottom: 1px solid #1f2024; }
-  .brand { font-weight: 900; letter-spacing: .02em; font-size: 1.15rem; }
-  .brand span { color: var(--red); }
-  main { flex: 1; padding: 64px 0 48px; }
-  h1 { font-size: clamp(2.2rem, 1.2rem + 4vw, 3.6rem); line-height: 1.05; margin: 0 0 18px; font-weight: 900; letter-spacing: -.01em; }
-  h1 em { font-style: normal; color: var(--red); }
-  .lead { font-size: 1.2rem; line-height: 1.55; color: #e6e7ea; max-width: 640px; margin: 0 0 12px; }
-  .lead-es { font-size: 1rem; line-height: 1.55; color: var(--soft); max-width: 640px; margin: 0 0 48px; }
-  h2 { font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--red); margin: 0 0 14px; }
-  .card { display: block; text-decoration: none; color: #fff; border: 1px solid #2a2b30; border-radius: 18px; padding: 22px 24px; max-width: 520px; transition: border-color .2s; }
-  .card:hover, .card:focus-visible { border-color: var(--red); }
-  .card b { display: block; font-size: 1.35rem; margin-bottom: 4px; }
-  .card span { color: var(--soft); line-height: 1.5; }
-  .card i { font-style: normal; display: inline-block; margin-top: 10px; color: var(--red); font-weight: 700; }
-  .more { color: var(--soft); margin: 18px 0 48px; }
-  .contact a { color: #fff; font-weight: 700; }
-  footer { border-top: 1px solid #1f2024; padding: 22px 0; color: #6f7178; font-size: .9rem; }
+:root{
+  --bg:#0b0b0c; --bg2:#141416; --ink:#f3eee4; --ink-dim:#b9b3a7; --amber:#f0a23a; --verm:#e63b2e; --line:#2a2a2d;
+  --font-head:'Anton', Impact, 'Arial Narrow', sans-serif; --font-body:'Inter', system-ui, sans-serif;
+  --max:1240px; --pad:clamp(20px,5vw,64px);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--verm);color:#fff;padding:10px 14px;z-index:99}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.eyebrow{font-family:var(--font-body);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-dim);display:flex;align-items:center;gap:14px}
+.eyebrow::after{content:"";height:1px;flex:0 0 72px;background:var(--line)}
+h1,h2,h3{font-family:var(--font-head);font-weight:400;letter-spacing:-.01em;line-height:.92;margin:0;text-transform:none}
+h2{font-size:clamp(44px,8vw,112px)}
+p{margin:0 0 1em;max-width:58ch}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 22px;background:var(--verm);color:#fff;text-decoration:none;font-weight:600;font-size:15px;border:0;cursor:pointer;transition:transform .15s ease,background .15s ease}
+.btn:hover{background:#ff4a3a;transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border-bottom:1px solid var(--ink);padding:10px 0;min-height:44px}
+.btn.ghost:hover{color:var(--amber);border-color:var(--amber);background:transparent}
+.btn svg{width:14px;height:14px}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:linear-gradient(to bottom,rgba(11,11,12,.95),rgba(11,11,12,.75));backdrop-filter:blur(10px);border-bottom:1px solid transparent}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:36px;height:36px;flex:none}
+.brand b{font-family:var(--font-body);font-weight:600;letter-spacing:.3em;font-size:14px;display:block;line-height:1}
+.brand small{display:block;font-size:9px;letter-spacing:.28em;color:var(--ink-dim);margin-top:4px}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;align-items:center}
+.nav li a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font-size:14px;text-decoration:none;color:var(--ink);opacity:.9}
+.nav li a:hover{color:var(--amber)}
+.lang{display:flex;align-items:center;border-left:1px solid var(--line);padding-left:14px;margin-left:8px;gap:2px}
+.lang button{background:none;border:0;color:var(--ink-dim);font:inherit;font-size:13px;min-height:44px;min-width:36px;cursor:pointer;letter-spacing:.08em}
+.lang button[aria-pressed="true"]{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
+@media (max-width:640px){.nav li a{padding:0 8px;font-size:13px}.brand small{display:none}}
+@media (max-width:560px){.nav li:not(.lang){display:none}.lang{border-left:0;margin-left:0;padding-left:0}}
+
+/* HERO */
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,44fr) minmax(0,56fr);min-height:min(88vh,940px);overflow:hidden;border-bottom:1px solid var(--line);background:var(--bg)}
+.hero-art{position:relative;z-index:0;align-self:stretch}
+.hero-art picture{position:absolute;inset:0;display:block}
+.hero-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.hero-art::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(11,11,12,.55) 10%,rgba(11,11,12,0) 26%)}
+.hero-art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,12,.45) 0%,rgba(11,11,12,0) 22%,rgba(11,11,12,0) 78%,var(--bg) 100%)}
+.hero .wrap{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding-top:clamp(48px,8vh,96px);padding-bottom:clamp(48px,8vh,96px);padding-right:clamp(16px,3vw,40px);margin:0;max-width:none}
+.hero h1{font-size:clamp(64px,9.2vw,168px);max-width:7ch}
+.hero .eyebrow{margin-bottom:22px}
+.hero .lede{margin:28px 0 32px;font-size:clamp(16px,1.5vw,19px);color:var(--ink);max-width:42ch;text-wrap:pretty}
+@media (max-width:760px){
+  .hero{display:flex;flex-direction:column-reverse;min-height:auto}
+  .hero-art{height:78vw;min-height:320px}
+  .hero-art::before{background:linear-gradient(180deg,rgba(11,11,12,.35) 0%,rgba(11,11,12,0) 35%,rgba(11,11,12,0) 62%,var(--bg) 100%)}
+  .hero-art::after{display:none}
+  .hero .wrap{padding-top:18px;padding-bottom:56px;margin-top:0;padding-right:var(--pad)}
+  .hero h1{font-size:clamp(64px,18vw,120px)}
+}
+
+/* SECTIONS */
+section{padding:clamp(72px,10vw,140px) 0}
+.sec-head{margin-bottom:clamp(28px,4vw,48px)}
+.sec-head .eyebrow{margin-bottom:18px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+.no-js .reveal{opacity:1;transform:none}
+
+/* VENTURES / TIJUAS */
+#ventures{padding-top:0;background:var(--bg)}
+.venture{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:0;border:1px solid var(--line);background:var(--bg2);overflow:hidden}
+.venture .copy{padding:clamp(28px,4vw,56px);display:flex;flex-direction:column;justify-content:center}
+.venture .art{position:relative;min-height:360px}
+.venture .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%}
+.venture .art::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg2) 0%,rgba(20,20,22,0) 40%)}
+.venture h3{font-size:clamp(64px,9vw,136px);line-height:.85;margin-bottom:18px}
+.venture .slogan{font-size:clamp(18px,2vw,24px);color:var(--ink);margin-bottom:18px}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--verm);margin-bottom:22px}
+.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--verm);box-shadow:0 0 0 4px rgba(230,59,46,.18)}
+.venture p.desc{color:var(--ink-dim);font-size:16px}
+.venture .actions{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.note{font-size:13px;color:var(--ink-dim);margin-top:18px;max-width:52ch}
+@media (max-width:860px){.venture{grid-template-columns:1fr}.venture .art{min-height:220px;height:56vw;order:-1}.venture .art::before{background:linear-gradient(180deg,rgba(20,20,22,0) 50%,var(--bg2) 100%)}}
+
+/* PURPOSE */
+#purpose{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--bg) 0%,#101011 100%)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px}
+.pillar{background:var(--bg);padding:28px 24px 32px}
+.pillar .n{font-family:var(--font-head);font-size:34px;color:var(--amber);line-height:1;margin-bottom:14px}
+.pillar h4{margin:0 0 10px;font-size:18px;font-weight:600}
+.pillar p{color:var(--ink-dim);font-size:15px;margin:0}
+@media (max-width:760px){.pillars{grid-template-columns:1fr}}
+
+/* FOUNDER */
+.founder{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,5vw,80px);align-items:start}
+.founder blockquote{margin:0;font-family:var(--font-head);font-size:clamp(34px,4.6vw,64px);line-height:.95;color:var(--ink)}
+.founder .who{margin-top:22px;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-dim)}
+.founder p{color:var(--ink-dim)}
+@media (max-width:760px){.founder{grid-template-columns:1fr}}
+
+/* CONTACT */
+#contact{background:var(--bg2);border-top:1px solid var(--line)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px)}
+.contact p{color:var(--ink-dim)}
+.email-card{border:1px solid var(--line);background:var(--bg);padding:28px}
+.email-card .lbl{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:10px}
+.email-card a{font-family:var(--font-head);font-size:clamp(17px,4.6vw,34px);text-decoration:none;overflow-wrap:anywhere;display:block;margin-bottom:18px}
+.email-card a:hover{color:var(--amber)}
+.copied{font-size:13px;color:var(--amber);margin-left:12px;min-height:1em}
+@media (max-width:760px){.contact{grid-template-columns:1fr}}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:40px 0 48px;font-size:13px;color:var(--ink-dim)}
+footer .row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer .wordmark{font-weight:600;letter-spacing:.3em;color:var(--ink);font-size:14px}
+footer .tag{letter-spacing:.28em;text-transform:uppercase;font-size:10px}
+footer ul{list-style:none;padding:0;margin:0;display:flex;gap:18px;flex-wrap:wrap}
+footer a{text-decoration:none}footer a:hover{color:var(--amber)}
+footer .legal{margin-top:22px;font-size:12px;max-width:70ch}
 </style>
 </head>
-<body>
-  <header><div class="wrap"><div class="brand">E LUNA ENTERPRISES<span>,</span> LLC</div></div></header>
-  <main>
-    <div class="wrap">
-      <h1>Brands and platforms <em>built with purpose.</em></h1>
-      <p class="lead">E Luna Enterprises, LLC is a California company that builds and operates consumer brands and digital platforms that connect people with the places, businesses and culture they love.</p>
-      <p class="lead-es">Creamos y operamos marcas y plataformas digitales que conectan a la gente con los lugares, negocios y la cultura que aman.</p>
+<body class="no-js">
+<script>document.body.classList.remove('no-js')</script>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-      <h2>Our platforms</h2>
-      <a class="card" href="https://tijuas.com" rel="noopener">
-        <b>Tijuas.com</b>
-        <span>The bilingual guide to Tijuana: places to eat, drink, shop and explore, local businesses, history and culture.</span>
-        <i>Visit tijuas.com →</i>
-      </a>
-      <p class="more">More brands coming soon.</p>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="E Luna B Group, E Luna Enterprises, LLC — home">
+      <!-- Simplified ELB mark: stacked E / L, vermilion bar for B -->
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" fill="#0b0b0c"/><path fill="#f3eee4" d="M5 5h9v3H8v5h5v3H8v5h6v3H5zM17 5h3v13h6v3h-9z"/><path fill="#e63b2e" d="M20 20h7v3h-7z"/></svg>
+      <span><b>ELB GROUP</b><small>E LUNA ENTERPRISES, LLC</small></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#ventures" data-i18n="nav.ventures">Ventures</a></li>
+        <li><a href="#purpose" data-i18n="nav.purpose">Purpose</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        <li class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button><span aria-hidden="true" style="color:var(--line)">/</span>
+          <button type="button" data-lang="es" aria-pressed="false" lang="es">ES</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-      <h2>Contact</h2>
-      <p class="contact"><a href="mailto:apps@elunaenterprisesllc.com">apps@elunaenterprisesllc.com</a></p>
+<main id="main">
+<!-- A. ARRIVAL -->
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap">
+    <p class="eyebrow" data-i18n="hero.eyebrow">Faith. Purpose. Possibility.</p>
+    <h1 id="h1" data-i18n="hero.h1">Ideas become places.</h1>
+    <p class="lede" data-i18n="hero.lede">E Luna B Group is a selected portfolio of businesses and ventures from E Luna Enterprises, LLC — built with discipline, built to be useful, and built to last.</p>
+    <a class="btn" href="#ventures"><span data-i18n="hero.cta">Explore our ventures</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13 13 3M6 3h7v7"/></svg></a>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <picture>
+      <source srcset="img/hero-elb.webp" type="image/webp">
+      <img src="img/hero-elb.jpg" width="744" height="850" alt="" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+</section>
+
+<!-- B. FOUNDING MEMBER -->
+<section id="ventures" aria-labelledby="ventures-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-i18n="v.eyebrow">01 / Founding member</p>
+      <h2 id="ventures-h" data-i18n="v.h2">The portfolio starts here.</h2>
     </div>
-  </main>
-  <footer><div class="wrap">© 2026 E Luna Enterprises, LLC · California, United States</div></footer>
+    <article class="venture reveal" aria-labelledby="tijuas-h">
+      <div class="copy">
+        <h3 id="tijuas-h">tijuas.</h3>
+        <p class="slogan" lang="es">Todo Tijuas. Todo el tiempo. Todo tuyo.</p>
+        <p class="status" data-i18n="v.status">Live now</p>
+        <p class="desc" data-i18n="v.desc">Tijuas is the bilingual guide to Tijuana and the places that give it character — where to eat, drink, shop and explore, its history and its culture — for the people who live there, the people who visit, and the businesses that make the city what it is.</p>
+        <div class="actions">
+          <a class="btn" href="https://tijuas.com" rel="noopener"><span data-i18n="v.visit">Visit tijuas.com</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13 13 3M6 3h7v7"/></svg></a>
+          <a class="btn ghost" href="#contact"><span data-i18n="v.cta">Partner with Tijuas</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13 13 3M6 3h7v7"/></svg></a>
+        </div>
+        <p class="note" data-i18n="v.note">Open now on the web at tijuas.com. iPhone and Android apps are on the way.</p>
+      </div>
+      <div class="art" aria-hidden="true">
+        <picture>
+          <source srcset="img/tijuas-street.webp" type="image/webp">
+          <img src="img/tijuas-street.jpg" width="490" height="510" alt="" loading="lazy" decoding="async">
+        </picture>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- C. PURPOSE -->
+<section id="purpose" aria-labelledby="purpose-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-i18n="p.eyebrow">02 / Purpose</p>
+      <h2 id="purpose-h" data-i18n="p.h2">Why the group exists.</h2>
+    </div>
+    <p class="reveal" style="font-size:clamp(17px,1.8vw,21px);max-width:52ch" data-i18n="p.lede">We build useful businesses. Each venture in the group is chosen on purpose, developed with discipline, and expected to create real value — for the people it serves and the people it creates opportunity for.</p>
+    <div class="pillars reveal">
+      <div class="pillar"><div class="n">01</div><h4 data-i18n="p.1h">Faith first</h4><p data-i18n="p.1p">God first. Every decision starts there, and the work is meant to honor that.</p></div>
+      <div class="pillar"><div class="n">02</div><h4 data-i18n="p.2h">Built to be useful</h4><p data-i18n="p.2p">A venture earns its place by solving something real. No vanity projects, no empty categories.</p></div>
+      <div class="pillar"><div class="n">03</div><h4 data-i18n="p.3h">Lasting value</h4><p data-i18n="p.3p">We're building for the long run — businesses that create opportunity, help others, and hold their ground.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- D. FOUNDER -->
+<section id="founder" aria-labelledby="founder-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-i18n="f.eyebrow">03 / Founder</p>
+      <h2 id="founder-h" data-i18n="f.h2">Owner / founder E. Luna.</h2>
+    </div>
+    <div class="founder reveal">
+      <div>
+        <blockquote data-i18n="f.quote">Perfection is key. The details are the work.</blockquote>
+        <p class="who">E. Luna — <span data-i18n="f.role">owner / founder</span></p>
+      </div>
+      <div>
+        <p data-i18n="f.p1">E Luna B Group is owned and led by E. Luna, who selects, develops, and directs each venture in the portfolio.</p>
+        <p data-i18n="f.p2">The focus stays on what is being built and why: businesses with a clear purpose, developed with discipline, and held to a high standard in the details.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- E. PARTNERSHIPS & CONTACT -->
+<section id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" data-i18n="c.eyebrow">04 / Partnerships &amp; contact</p>
+      <h2 id="contact-h" data-i18n="c.h2">Let's talk business.</h2>
+    </div>
+    <div class="contact reveal">
+      <div>
+        <p data-i18n="c.p1">For partnership proposals, business inquiries, or questions about a venture in the group, reach us by email. Relevant, specific messages get a reply.</p>
+        <p data-i18n="c.p2">Own a business in Tijuana? Put "Tijuas" in the subject line and ask about getting listed or featured.</p>
+      </div>
+      <div class="email-card">
+        <div class="lbl" style="margin-bottom:6px" data-i18n="c.ent">Company</div>
+        <p style="margin:0 0 18px;font-size:17px;color:var(--ink)">E Luna Enterprises, LLC<br><span style="color:var(--ink-dim);font-size:14px" data-i18n="c.where">California, United States</span></p>
+        <div class="lbl" data-i18n="c.lbl">Email</div>
+        <a id="email-link" href="mailto:apps@elunaenterprisesllc.com">apps@elunaenterprisesllc.com</a>
+        <button type="button" class="btn" id="copy-email" data-i18n="c.copy">Copy email</button><span class="copied" id="copied" role="status" aria-live="polite"></span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- F. FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div><div class="wordmark">E LUNA ENTERPRISES, LLC</div><div class="tag" style="margin-top:6px"><span>E Luna B Group™</span> · <span data-i18n="ft.tag">Ideas become places.</span></div></div>
+      <ul>
+        <li><a href="#ventures" data-i18n="nav.ventures">Ventures</a></li>
+        <li><a href="#purpose" data-i18n="nav.purpose">Purpose</a></li>
+        <li><a href="#founder" data-i18n="nav.founder">Founder</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+    <p class="legal" data-i18n="ft.legal">© 2026 E Luna Enterprises, LLC. E Luna B Group™ is a brand of E Luna Enterprises, LLC, a California company. Images are AI-generated illustrations, a conceptual expression of the group's identity — not photographs of real or owned property. PIK / VLF.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var T = {
+    es: {
+      "skip":"Ir al contenido",
+      "nav.ventures":"Negocios","nav.purpose":"Propósito","nav.contact":"Contacto","nav.founder":"Fundador",
+      "hero.eyebrow":"Fe. Propósito. Posibilidad.",
+      "hero.h1":"Las ideas se vuelven lugares.",
+      "hero.lede":"E Luna B Group es un portafolio selecto de negocios y proyectos de E Luna Enterprises, LLC — construidos con disciplina, hechos para ser útiles y hechos para durar.",
+      "hero.cta":"Explora nuestros negocios",
+      "v.eyebrow":"01 / Miembro fundador","v.h2":"El portafolio empieza aquí.",
+      "v.status":"Ya disponible",
+      "v.desc":"Tijuas es la guía bilingüe de Tijuana y los lugares que le dan carácter — dónde comer, tomar, comprar y pasear, su historia y su cultura — para la gente que vive ahí, la que la visita y los negocios que hacen a la ciudad lo que es.",
+      "v.cta":"Asóciate con Tijuas","v.visit":"Visita tijuas.com",
+      "v.note":"Ya está abierto en la web en tijuas.com. Las apps para iPhone y Android vienen en camino.",
+      "p.eyebrow":"02 / Propósito","p.h2":"Por qué existe el grupo.",
+      "p.lede":"Construimos negocios útiles. Cada proyecto del grupo se elige con intención, se desarrolla con disciplina y debe crear valor real — para la gente a la que sirve y para la gente a la que le abre oportunidades.",
+      "p.1h":"Primero la fe","p.1p":"Dios primero. Cada decisión empieza ahí, y el trabajo busca honrarlo.",
+      "p.2h":"Hecho para ser útil","p.2p":"Un negocio se gana su lugar resolviendo algo real. Sin proyectos de vanidad ni categorías vacías.",
+      "p.3h":"Valor duradero","p.3p":"Construimos a largo plazo — negocios que crean oportunidad, ayudan a otros y se mantienen firmes.",
+      "f.eyebrow":"03 / Fundador","f.h2":"Dueño / fundador E. Luna.",
+      "f.quote":"La perfección es clave. Los detalles son el trabajo.","f.role":"dueño / fundador",
+      "f.p1":"E Luna B Group es propiedad de E. Luna, quien selecciona, desarrolla y dirige cada proyecto del portafolio.",
+      "f.p2":"El enfoque está en lo que se construye y por qué: negocios con un propósito claro, desarrollados con disciplina y con un estándar alto en los detalles.",
+      "c.eyebrow":"04 / Alianzas y contacto","c.h2":"Hablemos de negocios.",
+      "c.p1":"Para propuestas de alianza, consultas de negocio o preguntas sobre algún proyecto del grupo, escríbenos por correo. Los mensajes relevantes y específicos reciben respuesta.",
+      "c.p2":"¿Tienes un negocio en Tijuana? Pon \"Tijuas\" en el asunto y pregunta cómo aparecer o destacar.",
+      "c.lbl":"Correo","c.ent":"Empresa","c.where":"California, Estados Unidos","c.copy":"Copiar correo",
+      "ft.tag":"Las ideas se vuelven lugares.",
+      "ft.legal":"© 2026 E Luna Enterprises, LLC. E Luna B Group™ es una marca de E Luna Enterprises, LLC, una empresa de California. Las imágenes son ilustraciones generadas con IA, una expresión conceptual de la identidad del grupo — no fotografías de propiedades reales. PIK / VLF."
+    }
+  };
+  var EN = {};
+  var nodes = document.querySelectorAll('[data-i18n]');
+  nodes.forEach(function(n){ EN[n.getAttribute('data-i18n')] = n.innerHTML; });
+  var btns = document.querySelectorAll('[data-lang]');
+  function setLang(l){
+    var d = l==='es' ? T.es : EN;
+    nodes.forEach(function(n){ var k=n.getAttribute('data-i18n'); if(d[k]!=null) n.innerHTML=d[k]; });
+    document.documentElement.lang = l;
+    document.title = 'E Luna B Group — E Luna Enterprises, LLC';
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-lang')===l ? 'true':'false'); });
+    try{ localStorage.setItem('elb-lang', l); }catch(e){}
+  }
+  btns.forEach(function(b){ b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang')); }); });
+  var saved=null; try{ saved=localStorage.getItem('elb-lang'); }catch(e){}
+  if(saved==='es') setLang('es');
+
+  // Scroll reveal (no-op under reduced motion)
+  var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  if(rm || !('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in')}); }
+  else{
+    var io = new IntersectionObserver(function(entries){ entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} }); },{rootMargin:'0px 0px -10% 0px',threshold:.12});
+    els.forEach(function(e){io.observe(e)});
+  }
+
+  // Copy email
+  var cp=document.getElementById('copy-email'), st=document.getElementById('copied');
+  cp.addEventListener('click', function(){
+    var addr=document.getElementById('email-link').textContent.trim();
+    var ok=function(){ st.textContent = document.documentElement.lang==='es' ? 'Copiado' : 'Copied'; setTimeout(function(){st.textContent=''},2200); };
+    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(addr).then(ok, function(){ st.textContent=addr; }); }
+    else { st.textContent=addr; }
+  });
+})();
+</script>
 </body>
 </html>
